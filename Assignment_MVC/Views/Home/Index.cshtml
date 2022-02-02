@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>MVC Assignment App</h1>
+
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Employees</h2>
+        <p>
+            Employees of the company. Adding, removing or updating employee information.
+        </p>
+        <button class="btn btn-default">@Html.ActionLink("Employees", "Index", "Employees")</button>
+    </div>
+    <div class="col-md-4">
+        <h2>Services</h2>
+        <p>Services offered in the company. You can add, remove or update services.</p>
+        <button class="btn btn-default">@Html.ActionLink("Services", "Index", "Services")</button>
+    </div>
+    <div class="col-md-4">
+        <h2>Customers</h2>
+        <p>You can add, remove, update customer information here! </p>
+        <button class="btn btn-default">@Html.ActionLink("Customers", "Index", "Customers")</button>
+    </div>
+</div>
